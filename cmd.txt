@@ -1,0 +1,17 @@
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');
+SHOW VARIABLES LIKE 'validate_password%';
+set global validate_password_policy=0;
+show databases;
+https://blog.csdn.net/u010746364/article/details/53078550 
+
+redis-cli -h 127.0.0.1 -p 6379
+config get requirepass
+
+config set requirepass root
+
+auth 
+
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'nE7jA%5m'; 
+CREATE DATABASE IF NOT EXISTS cAuth DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci; 
